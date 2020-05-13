@@ -1,0 +1,122 @@
+.slide-about {
+    // width: 100%;
+    width: 870px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+    transition: 200ms all ease-in-out;
+
+    #projects:checked ~ .slider__slides & {
+        // transform: translateX(-100%);
+        transform: translateX(-870px);
+    }
+
+    #about:checked ~ .slider__slides & {
+        transform: translateX(0);
+    }
+}
+
+.slide-about__photo {
+    clip-path: url(#clip_path);
+}
+
+.slide-about__paragraph {
+    width: 573px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 60px;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: $grey;
+}
+
+.slide-about__list {
+    max-height: 100px;
+
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+    transform: translate(258px, -63px);
+}
+
+.slide-about__item {
+    margin: 0;
+    padding: 0;
+
+    &:first-child {
+        margin-right: 150px;
+    }
+}
+
+.slide-about__link {
+    padding-left: 30px;
+
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 22px;
+    color: $yellow;
+
+    position: relative;
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &::after {
+        content: "";
+        width: 75%;
+        height: 2px;
+        background-color: $orange;
+
+        position: absolute;
+        bottom: 0;
+        right: 8px;
+
+        opacity: 0;
+        transition: 200ms all ease-in-out;
+    }
+
+    &::before {
+        content: "";
+        width: 27px;
+        height: 27px;
+
+        position: absolute;
+        left: 0;
+        top: 4px;
+
+        background-repeat: no-repeat;
+    }
+
+    &--document::before {
+        left: -1px;
+        background-image: url("../img/icon-document.svg");
+    }
+
+    &--github::before {
+        left: -8px;
+        background-image: url("../img/icon-github-small-orange.svg");
+    }
+
+    &--github::after {
+        width: 78%;
+        right: 6px;
+    }
+}
+
+// .slide-about__icon {
+//     width: 27px;
+//     height: 27px;
+
+//     display: block;
+// }

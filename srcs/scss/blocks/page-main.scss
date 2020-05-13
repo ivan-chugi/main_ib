@@ -1,0 +1,15 @@
+.page-main {
+    padding-bottom: 300px;
+
+    position: relative;
+
+    &::after {
+        content: "© Designed by SXRRYBRX";
+
+        color: $grey;
+
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: 0;
+    }
+}

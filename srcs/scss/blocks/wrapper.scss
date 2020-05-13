@@ -1,0 +1,15 @@
+.wrapper {
+    width: 930px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: flex;
+
+    &--header {
+        flex-direction: column;
+    }
+
+    &--main {
+        position: relative;
+    }
+}
