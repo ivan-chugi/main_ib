@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Ivan's developer profile</title>
 </head>
-<body>
-    <!-- <div class="background"> -->
+<body class="animated">
+    <input id="about" class="slider__radio" type="radio" name="controls" checked>
+    <input id="projects" class="slider__radio" type="radio" name="controls">
+    <div class="background">
         <header class="page-header">
             <div class="wrapper wrapper--header">
                 <h1 class="page-header__heading heading">Ivan Chugunov</h1>
@@ -59,105 +61,86 @@
                     </ul>
                 </div>
                 <section class="slider">
-                <div class="slider__wrapper">
-                    <input id="about" class="slider__radio" type="radio" name="controls" checked>
-                    <input id="projects" class="slider__radio" type="radio" name="controls">
-                    <div class="slider__controls">
-                        <!-- <input id="about" class="slider__radio" type="radio" name="controls" checked> -->
-                        <!-- <input id="projects" class="slider__radio" type="radio" name="controls"> -->
-                        <label class="slider__button" for="about">
-                            <span class="slider__button-text">About</span>
-                        </label>
-                        <label class="slider__button" for="projects">
-                            <span class="slider__button-text slider__button-text--margin">Projects</span>
-                        </label>
-                    </div>
-                    
-                    <div class="slider__slides">
-                        <div class="slider__slide slide-about">
-                            <img class="slide-about__photo" src="img/photo.png" alt="Ivan's photo">
-                            <svg width="0" height="0">
-                                <defs>
-                                <clipPath id="clip_path">
-                                    <path d="M95.9523 7.21229C110.317 -1.08138 128.016 -1.08138 142.381 7.21228L213.897 48.502C228.262 56.7956 237.111 72.123 237.111 88.7103V171.29C237.111 187.877 228.262 203.204 213.897 211.498L142.381 252.788C128.016 261.081 110.317 261.081 95.9524 252.788L24.4365 211.498C10.0715 203.204 1.22223 187.877 1.22223 171.29V88.7103C1.22223 72.123 10.0715 56.7956 24.4365 48.502L95.9523 7.21229Z"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            <p class="slide-about__paragraph">Until you have the inner discipline that brings calmness of mind, external facilities and conditions will never bring the joy and happiness you seek. On the other hand, if you possess this inner quality, calmness of mind, a degree of stability within.</p>
-                            <ul class="slide-about__list">
-                                <li class="slide-about__item">
-                                    <a href="" class="slide-about__link slide-about__link--document">
-                                        <!-- <span class="slide-about__icon slide-about__icon--document">
-                                            <svg viewBox="0 0 20 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19.2656 5.26986L14.8958 0.900919C14.4271 0.43226 13.7917 0.166687 13.1302 0.166687H2.5C1.11979 0.171894 0 1.29147 0 2.67141V24.3338C0 25.7138 1.11979 26.8334 2.5 26.8334H17.5C18.8802 26.8334 20 25.7138 20 24.3338V7.04034C20 6.37902 19.7344 5.73852 19.2656 5.26986ZM17.2969 6.83726H13.3333V2.87449L17.2969 6.83726ZM2.5 24.3338V2.67141H10.8333V8.08702C10.8333 8.77959 11.3906 9.33677 12.0833 9.33677H17.5V24.3338H2.5ZM13.9635 13.5026C13.6667 13.5026 13.4115 13.7109 13.3542 13.9973C12.2812 19.0849 12.2917 18.9651 12.2604 19.3869C12.25 19.3244 12.2396 19.2515 12.224 19.163C12.1823 18.8974 12.2396 19.1734 10.9948 13.9817C10.9271 13.7005 10.6771 13.5026 10.3854 13.5026H9.69271C9.40625 13.5026 9.15625 13.7005 9.08333 13.9765C7.8125 19.1317 7.83333 18.9859 7.79167 19.3765C7.78646 19.3192 7.78125 19.2463 7.76562 19.1578C7.72917 18.887 7.03125 15.3408 6.77083 14.0025C6.71354 13.7109 6.45833 13.4974 6.15625 13.4974H5.28125C4.875 13.4974 4.57812 13.8776 4.67187 14.2681C5.08854 15.9657 6.0625 19.9701 6.40104 21.3501C6.46875 21.6312 6.71875 21.8239 7.01042 21.8239H8.32292C8.60938 21.8239 8.85937 21.6312 8.92708 21.3501L9.85938 17.632C9.9375 17.3092 9.98958 17.0071 10.0156 16.7312L10.1667 17.632C10.1719 17.6529 10.8229 20.2617 11.099 21.3501C11.1667 21.626 11.4167 21.8239 11.7031 21.8239H12.9896C13.276 21.8239 13.526 21.6312 13.5938 21.3501C14.6771 17.0853 15.1667 15.1533 15.3906 14.2681C15.4896 13.8723 15.1927 13.4922 14.7865 13.4922H13.9635V13.5026Z" fill="#F2A365"/>
-                                                </svg>
-                                        </span> -->
-                                        Download CV
-                                    </a>
-                                </li>
-                                <li class="slide-about__item">
-                                    <a href="" class="slide-about__link slide-about__link--github">
-                                        <!-- <span class="slide-about__icon slide-about__icon--github">
-                                            <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.03085 21.5345C9.03085 21.6433 8.90565 21.7304 8.74778 21.7304C8.56814 21.7468 8.44294 21.6597 8.44294 21.5345C8.44294 21.4256 8.56815 21.3385 8.72601 21.3385C8.88931 21.3222 9.03085 21.4093 9.03085 21.5345ZM7.3379 21.2895C7.2998 21.3984 7.40867 21.5236 7.57198 21.5562C7.71351 21.6107 7.87681 21.5562 7.90948 21.4474C7.94214 21.3385 7.83871 21.2133 7.6754 21.1643C7.53387 21.1262 7.37601 21.1806 7.3379 21.2895ZM9.74395 21.197C9.58609 21.2351 9.47722 21.3385 9.49355 21.4637C9.50988 21.5726 9.65141 21.6433 9.81472 21.6052C9.97258 21.5671 10.0815 21.4637 10.0651 21.3548C10.0488 21.2514 9.90181 21.1806 9.74395 21.197ZM13.3258 0.33728C5.77561 0.33728 0 6.06934 0 13.6195C0 19.6564 3.7996 24.8224 9.22681 26.6405C9.92359 26.7657 10.1685 26.3357 10.1685 25.9818C10.1685 25.6443 10.1522 23.7826 10.1522 22.6395C10.1522 22.6395 6.34173 23.456 5.54153 21.0173C5.54153 21.0173 4.92097 19.4332 4.02823 19.025C4.02823 19.025 2.78165 18.1703 4.11532 18.1867C4.11532 18.1867 5.47077 18.2955 6.21653 19.5911C7.40867 21.6923 9.40645 21.0881 10.1849 20.7288C10.3101 19.8578 10.6639 19.2536 11.0558 18.8943C8.0129 18.5568 4.94274 18.1159 4.94274 12.8792C4.94274 11.3822 5.35645 10.631 6.22742 9.67297C6.08589 9.31914 5.62319 7.86026 6.36895 5.9768C7.50665 5.62297 10.125 7.44656 10.125 7.44656C11.2137 7.14172 12.3841 6.98385 13.5435 6.98385C14.703 6.98385 15.8734 7.14172 16.9621 7.44656C16.9621 7.44656 19.5804 5.61752 20.7181 5.9768C21.4639 7.86571 21.0012 9.31914 20.8597 9.67297C21.7306 10.6365 22.2641 11.3877 22.2641 12.8792C22.2641 18.1322 19.0579 18.5514 16.0149 18.8943C16.5157 19.3244 16.9403 20.1409 16.9403 21.4201C16.9403 23.2546 16.924 25.5246 16.924 25.971C16.924 26.3248 17.1744 26.7548 17.8657 26.6296C23.3093 24.8224 27 19.6564 27 13.6195C27 6.06934 20.876 0.33728 13.3258 0.33728ZM5.29113 19.1121C5.22036 19.1665 5.23669 19.2917 5.32923 19.3951C5.41633 19.4822 5.54153 19.5203 5.6123 19.4496C5.68306 19.3951 5.66673 19.2699 5.57419 19.1665C5.4871 19.0794 5.3619 19.0413 5.29113 19.1121ZM4.70323 18.6712C4.66512 18.7419 4.71956 18.829 4.82843 18.8835C4.91552 18.9379 5.02439 18.9216 5.0625 18.8453C5.10061 18.7746 5.04617 18.6875 4.9373 18.633C4.82843 18.6004 4.74133 18.6167 4.70323 18.6712ZM6.46694 20.6091C6.37984 20.6798 6.4125 20.8431 6.5377 20.9466C6.6629 21.0718 6.82077 21.0881 6.89153 21.001C6.9623 20.9302 6.92964 20.7669 6.82077 20.6635C6.70101 20.5383 6.5377 20.522 6.46694 20.6091ZM5.84637 19.8089C5.75927 19.8633 5.75927 20.0048 5.84637 20.13C5.93347 20.2552 6.08044 20.3097 6.15121 20.2552C6.23831 20.1845 6.23831 20.0429 6.15121 19.9177C6.075 19.7925 5.93347 19.7381 5.84637 19.8089Z" fill="#F2A365"/>
-                                                </svg>
-                                        </span> -->
-                                        Explore GitHub
-                                    </a>
-                                </li>
-                            </ul>
+                    <div class="slider__wrapper">
+                        <div class="slider__controls">
+                            <label class="slider__button" for="about">
+                                <span class="slider__button-text">About</span>
+                            </label>
+                            <label class="slider__button" for="projects">
+                                <span class="slider__button-text slider__button-text--margin">Projects</span>
+                            </label>
                         </div>
-                        <div class="slider__slide slide-projects">
-                            <ul class="slide-projects__list">
-                                <li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li>
-                                <li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li>
-                                <li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li>
-                                <li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li>
-                                <li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li><li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li><li class="slide-projects__item">
-                                    <a href="" class="slide-projects__link">
-                                        <b class="slide-projects__title">Internet store #1</b>
-                                        <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
-                                    </a>
-                                </li>
-
-                            </ul>
+                        
+                        <div class="slider__slides">
+                            <div class="slider__slide slide-about">
+                                <img class="slide-about__photo" src="img/photo.png" alt="Ivan's photo">
+                                <svg width="0" height="0">
+                                    <defs>
+                                        <clipPath id="clip_path">
+                                            <path d="M95.9523 7.21229C110.317 -1.08138 128.016 -1.08138 142.381 7.21228L213.897 48.502C228.262 56.7956 237.111 72.123 237.111 88.7103V171.29C237.111 187.877 228.262 203.204 213.897 211.498L142.381 252.788C128.016 261.081 110.317 261.081 95.9524 252.788L24.4365 211.498C10.0715 203.204 1.22223 187.877 1.22223 171.29V88.7103C1.22223 72.123 10.0715 56.7956 24.4365 48.502L95.9523 7.21229Z"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p class="slide-about__paragraph">Until you have the inner discipline that brings calmness of mind, external facilities and conditions will never bring the joy and happiness you seek. On the other hand, if you possess this inner quality, calmness of mind, a degree of stability within.</p>
+                                <ul class="slide-about__list">
+                                    <li class="slide-about__item">
+                                        <a href="" class="slide-about__link slide-about__link--document">
+                                            Download CV
+                                        </a>
+                                    </li>
+                                    <li class="slide-about__item">
+                                        <a href="" class="slide-about__link slide-about__link--github">
+                                            Explore GitHub
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="slider__slide slide-projects">
+                                <ul class="slide-projects__list">
+                                    <li class="slide-projects__item">
+                                        <a href="" class="slide-projects__link">
+                                            <b class="slide-projects__title">Internet store #1</b>
+                                            <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf jsdfoi adk kdjkla asdlfka skk</p>
+                                        </a>
+                                    </li>
+                                    <li class="slide-projects__item">
+                                        <a href="" class="slide-projects__link">
+                                            <b class="slide-projects__title">Internet store #1</b>
+                                            <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf jsdfoi adk kdjkla asdlfka skk</p>
+                                        </a>
+                                    </li>
+                                    <li class="slide-projects__item">
+                                        <a href="" class="slide-projects__link">
+                                            <b class="slide-projects__title">Internet store #1</b>
+                                            <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf jsdfoi adk kdjkla asdlfka skk</p>
+                                        </a>
+                                    </li>
+                                    <li class="slide-projects__item">
+                                        <a href="" class="slide-projects__link">
+                                            <b class="slide-projects__title">Internet store #1</b>
+                                            <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf jsdfoi adk kdjkla asdlfka skk</p>
+                                        </a>
+                                    </li>
+                                    <li class="slide-projects__item">
+                                        <a href="" class="slide-projects__link">
+                                            <b class="slide-projects__title">Internet store #1</b>
+                                            <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
+                                        </a>
+                                    </li>
+                                    <li class="slide-projects__item">
+                                        <a href="" class="slide-projects__link">
+                                            <b class="slide-projects__title">Internet store #1</b>
+                                            <p class="slide-projects__paragraph">Short description dfsjdkfjk skdf</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </section>
             </div>
         </main>
-    <!-- </div> -->
-    <!-- <script src="../js/script.js"></script> -->
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -4,3 +4,10 @@
     line-height: 80px;
     color: $yellow;
 }
+
+@media (max-width: 920px) {
+    .heading {
+        font-size: 43px;
+        line-height: 43px;
+    }
+}

@@ -1,5 +1,4 @@
 .slide-about {
-    // width: 100%;
     width: 870px;
 
     position: relative;
@@ -10,15 +9,6 @@
     flex-shrink: 0;
 
     transition: 200ms all ease-in-out;
-
-    #projects:checked ~ .slider__slides & {
-        // transform: translateX(-100%);
-        transform: translateX(-870px);
-    }
-
-    #about:checked ~ .slider__slides & {
-        transform: translateX(0);
-    }
 }
 
 .slide-about__photo {
@@ -58,7 +48,7 @@
 }
 
 .slide-about__link {
-    padding-left: 30px;
+    margin-left: 30px;
 
     text-decoration: none;
 
@@ -69,18 +59,19 @@
     position: relative;
 
     &:hover::after {
+        bottom: 0;
         opacity: 1;
     }
 
     &::after {
         content: "";
-        width: 75%;
+        width: 94%;
         height: 2px;
-        background-color: $orange;
+        background-color: $yellow;
 
         position: absolute;
-        bottom: 0;
-        right: 8px;
+        bottom: -5px;
+        left: 2px;
 
         opacity: 0;
         transition: 200ms all ease-in-out;
@@ -92,31 +83,70 @@
         height: 27px;
 
         position: absolute;
-        left: 0;
+        left: -31px;
         top: 4px;
 
         background-repeat: no-repeat;
     }
 
     &--document::before {
-        left: -1px;
         background-image: url("../img/icon-document.svg");
     }
 
     &--github::before {
-        left: -8px;
+        left: -38px;
         background-image: url("../img/icon-github-small-orange.svg");
-    }
-
-    &--github::after {
-        width: 78%;
-        right: 6px;
     }
 }
 
-// .slide-about__icon {
-//     width: 27px;
-//     height: 27px;
+@media (max-width: 920px) {
+    .slide-about {
+        width: 280px;
+    }
 
-//     display: block;
-// }
+    .slide-about__photo {
+        transform: scale(0.475) translate(-131px, -100px);
+    }
+
+    .slide-about__list {
+        order: 2;
+
+        transform: translate(106px, -226px);
+
+        flex-direction: column;
+    }
+    
+    .slide-about__item {
+        margin-bottom: 22px;
+
+        &:first-child {
+            margin-right: 0;
+        }
+    }
+
+    .slide-about__link {
+        font-size: 16px;
+        line-height: 24px;
+
+        &::before {
+            left: -30px;
+            top: -3px;
+        }
+
+        &--github::before {
+            left: -33px;
+        }
+    }
+
+    .slide-about__paragraph {
+        width: 280px;
+
+        margin-top: -208px;
+        margin-left: 0;
+
+        font-size: 16px;
+        line-height: 24px;
+
+        order: 3;
+    }
+}

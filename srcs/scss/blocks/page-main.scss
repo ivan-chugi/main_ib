@@ -1,15 +1,17 @@
 .page-main {
-    padding-bottom: 100px;
-
     position: relative;
+}
 
-    &::after {
-        content: "© Designed by SXRRYBRX";
+.page-main__contacts {
+    position: absolute;
+    top: -180px;
+    right: 30px;
+}
 
-        color: $grey;
+@media (max-width: 920px) {
+    .page-main__contacts {
 
-        position: absolute;
-        left: calc(50% - 60px);
-        bottom: 0;
-    }
+        top: 350px;
+        right: 31px;
+    }    
 }

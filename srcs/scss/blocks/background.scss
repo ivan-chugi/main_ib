@@ -1,25 +1,54 @@
-// .background {
-//     width: 100%;
-//     height: 100%;
+.background {
+    width: 100%;
+    height: 100%;
 
-//     overflow: hidden;
+    overflow: hidden;
 
-//     position: relative;
+    position: relative;
 
-//     &::before {
-//         content: "hey";
-//         width: 2809px;
-//         height: 1800px;
+    &::before {
+        content: "hey";
+        width: 0px;
+        height: 0px;
+        margin: 0;
+        padding: 0;
+    
+        position: absolute;
+        top: 50%;
+        left: -6vw;
+    
+        font-size: 83vw;
+        font-weight: 600;
+        color: $hey;
+        line-height: 0;
+    
+        z-index: -1;
+        transition: none;
+    }
 
-//         font-weight: 600;
-//         font-size: 1800px;
-//         color: #252B34;
+    #projects:checked ~ &::before {
+        left: -22vw;
+    }
+}
 
-//         position: absolute;
-//         top: 480px;
-//         left: -340px;
+@media (max-width: 920px) {
+    .background {
+        &::before {
+            content: "hey";
+            width: 0px;
+            height: 0px;
+            margin: 0;
+            padding: 0;
+        
+            position: absolute;
+            top: 35%;
+            left: -15vw;
+        
+            font-size: 230vw;
+        }
 
-//         z-index: -1;
-//         // box-sizing: border-box;
-//     }
-// }
+        #projects:checked ~ &::before {
+            left: -250vw;
+        }
+    }
+}
