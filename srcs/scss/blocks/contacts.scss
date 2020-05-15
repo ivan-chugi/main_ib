@@ -53,8 +53,6 @@
         width: 280px;
 
         z-index: 3;
-
-        transition: 300ms all ease-in-out;
     }
 
     .contacts__label {
@@ -68,6 +66,12 @@
 
     #projects:checked ~ .background .contacts {
         opacity: 0;
-        
+    }
+
+    @media (max-height: 520px) {
+        .contacts__icon {
+            width: 25px;
+            height: 25px;
+        }
     }
 }

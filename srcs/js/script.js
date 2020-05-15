@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove("animated");
         clearTimeout(timer);
         timer = setTimeout(function() {
-        document.body.classList.add("animated"); },
-        100);
+        document.body.classList.add("animated");
+        console.log("KEK");
+        },
+        1000);
     });
 });

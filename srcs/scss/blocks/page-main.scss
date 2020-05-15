@@ -10,8 +10,27 @@
 
 @media (max-width: 920px) {
     .page-main__contacts {
-
         top: 350px;
         right: 31px;
-    }    
+    }
+
+    @media (max-width: 320px) {
+        .page-main__contacts  {
+            right: 2.5vw;
+        }
+    }
+
+    @media (max-height: 580px) {
+        .page-main__contacts {
+            // top: 58vh;
+            top: 49vmax;
+        }
+    }
+
+    @media (max-height: 450px) {
+        .page-main__contacts {
+            // top: 58vh;
+            display: none;
+        }
+    }
 }

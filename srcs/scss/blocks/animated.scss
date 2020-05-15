@@ -1,5 +1,54 @@
-.animated {
-    .background::before {
+.animated .background {
+    &::before {
         transition: 550ms all ease-in-out;
     }    
+
+    .slide-about {
+        transition: 200ms all ease-in-out;
+    }
+
+    .slide-about__link::after {
+        transition: 200ms all ease-in-out;
+    
+    }
+
+    .slide-projects {
+        transition: 200ms all ease-in-out;
+    }
+
+    .slide-projects__link:hover {
+        transition: 100ms all ease-in-out;
+    }
+
+    .slider__slides {
+        transition: 550ms transform ease-in-out;
+    }
+
+    .slider__controls {
+        &::before {
+            transition: 400ms transform ease-in-out;
+        }
+    }
+    .slider__button {
+        &::after {
+            transition: 200ms all ease-in-out;
+        }
+    }
+    
+
+    .slider__button-text {
+        transition: 300ms all ease-in-out;
+
+        &:hover {
+            transition: 50ms all ease-in-out;
+        }
+    }
+}
+
+@media (max-width: 920px) {
+    .animated {
+        .background .contacts {
+            transition: 300ms all ease-in-out;
+        }
+    }
 }

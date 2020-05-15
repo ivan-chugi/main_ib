@@ -1,5 +1,4 @@
 .page-header {
-    // padding-top: 175px;
     padding-top: calc(50vh - 305.5px);
     margin-bottom: 73px;
 }
@@ -25,5 +24,11 @@
 
     .page-header__subheading {
         margin-left: -2px;
+    }
+
+    @media (max-height: 640px) {
+        .page-header {
+            margin-top: 30px;
+        }
     }
 }

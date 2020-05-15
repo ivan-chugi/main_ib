@@ -2,8 +2,6 @@
     width: 900px;
 
     flex-shrink: 0;
-
-    transition: 200ms all ease-in-out;
 }
 
 .slide-projects__list {
@@ -43,7 +41,6 @@
 
     &:hover {
         background-color: rgba(47, 53, 62, 1);
-        transition: 100ms all ease-in-out;
     }
 }
 
@@ -68,6 +65,7 @@
 @media (max-width: 920px) {
     .slide-projects {
         width: 280px;
+        margin-top: 20px;
 
         overflow-y: scroll;
     }
@@ -90,6 +88,10 @@
         min-height: 169px;
 
         background-color: rgba(47, 53, 62, 1);
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     .slide-projects__title {
