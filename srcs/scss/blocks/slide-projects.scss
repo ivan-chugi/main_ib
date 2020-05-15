@@ -26,7 +26,8 @@
 }
 
 .slide-projects__link {
-    max-width: 277px;
+    // max-width: 277px;
+    width: 277px;
     min-height: 120px;
     padding-left: 14px;
     padding-top: 14px;
@@ -95,6 +96,7 @@
     }
 
     .slide-projects__title {
+        min-height: 48px;
         margin-top: -8px;
         margin-left: -5px;
         margin-bottom: 13px;
