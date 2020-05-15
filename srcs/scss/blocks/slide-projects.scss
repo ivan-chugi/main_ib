@@ -74,6 +74,9 @@
 
     .slide-projects__list {
         margin-top: 20px;
+
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .slide-projects__item {
@@ -86,8 +89,10 @@
     }
 
     .slide-projects__link {
-        width: 130px;
-        min-height: 169px;
+        // width: 130px;
+        width: 100%;
+        // min-height: 169px;
+        min-height: 69px;
         padding-right: 7px;
 
         background-color: rgba(47, 53, 62, 1);
@@ -98,7 +103,8 @@
     }
 
     .slide-projects__title {
-        min-height: 48px;
+        // min-height: 48px;
+        min-height: 28px;
         margin-top: -8px;
         margin-left: -5px;
         margin-bottom: 13px;
@@ -106,20 +112,21 @@
         font-size: 16px;
         line-height: 24px;
 
-        &--small {
-            font-size: 13px;
-        }
+        // &--small {
+        //     font-size: 13px;
+        // }
     }
 
     .slide-projects__paragraph {
         margin-left: -5px;
+        margin-bottom: 20px;
 
         font-size: 16px;
         line-height: 24px;
 
-        &--small {
-            font-size: 15px;
-            line-height: 24.2px;
-        }
+        // &--small {
+        //     font-size: 15px;
+        //     line-height: 24.2px;
+        // }
     }    
 }
