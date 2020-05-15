@@ -30,6 +30,7 @@
     width: 277px;
     min-height: 120px;
     padding-left: 14px;
+    padding-right: 14px;
     padding-top: 14px;
 
     text-decoration: none;
@@ -87,6 +88,7 @@
     .slide-projects__link {
         width: 130px;
         min-height: 169px;
+        padding-right: 7px;
 
         background-color: rgba(47, 53, 62, 1);
 
@@ -114,5 +116,10 @@
 
         font-size: 16px;
         line-height: 24px;
+
+        &--small {
+            font-size: 15px;
+            line-height: 24.2px;
+        }
     }    
 }
